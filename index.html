@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <!--swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span style="color: var(--accent-orange)">CEM</span> Writing Services
+        </a>
+
+        <!-- Button to open sidebar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNav"
+        >
+          <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+        </button>
+
+        <!-- Offcanvas Sidebar -->
+        <div
+          class="offcanvas offcanvas-start side-bar"
+          tabindex="-1"
+          id="offcanvasNav"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">
+              <a class="navbar-brand" href="#">
+                <span style="color: var(--accent-orange)">CEM</span> Writing
+                Services
+              </a>
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >SERVICES</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Content Writing</a></li>
+                  <li><a class="dropdown-item" href="#">SEO Services</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Content Strategy</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">RESEARCH REPORT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PODCAST</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn-contact">Contact</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <p
+            class="text-center text-uppercase"
+            style="
+              color: var(--accent-orange);
+              font-weight: 700;
+              margin-bottom: 1rem;
+            "
+          >
+            BLOG
+          </p>
+          <h1>Insights from a professional content strategist</h1>
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="SEARCH" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <div class="row">
+          <!-- Blog Posts Column -->
+          <div class="col-lg-8">
+            <!-- Desktop Grid -->
+            <div class="desktop-grid">
+              <div class="row">
+                <div class="col-md-6">
+                  <article class="blog-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=1170&auto=format&fit=crop"
+                      alt="Content Writing"
+                    />
+                    <div class="blog-card-content">
+                      <div class="blog-date">4/3/22</div>
+                      <h3 class="blog-title">
+                        7 Marketing Experts Reveal The Top Qualities of A Great
+                        Content Writer
+                      </h3>
+                      <a href="#" class="read-more">Read More</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="blog-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop"
+                      alt="Customer Research"
+                    />
+                    <div class="blog-card-content">
+                      <div class="blog-date">2/28/22</div>
+                      <h3 class="blog-title">
+                        How To Put Customer Research At The Heart Of Your
+                        Content Strategy
+                      </h3>
+                      <a href="#" class="read-more">Read More</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="blog-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=200&fit=crop"
+                      alt="Email Marketing"
+                    />
+                    <div class="blog-card-content">
+                      <div class="blog-date">1/27/22</div>
+                      <h3 class="blog-title">
+                        5 Email Marketing Mistakes That Will Turn Away
+                        Subscribers (And How To Avoid Them)
+                      </h3>
+                      <a href="#" class="read-more">Read More</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="blog-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop"
+                      alt="Backlink Strategy"
+                    />
+                    <div class="blog-card-content">
+                      <div class="blog-date">12/13/21</div>
+                      <h3 class="blog-title">
+                        5 Experts Reveal Their Top Backlink Building Strategy
+                        Secrets
+                      </h3>
+                      <a href="#" class="read-more">Read More</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="blog-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
+                      alt="SEO Audit"
+                    />
+                    <div class="blog-card-content">
+                      <div class="blog-date">8/22/21</div>
+                      <h3 class="blog-title">
+                        7 Simple Steps for an Effective SEO Content Audit
+                      </h3>
+                      <a href="#" class="read-more">Read More</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="blog-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=200&fit=crop"
+                      alt="LinkedIn Content"
+                    />
+                    <div class="blog-card-content">
+                      <div class="blog-date">8/2/21</div>
+                      <h3 class="blog-title">
+                        6 Meaningful Ways To Create Content Ideas for LinkedIn
+                      </h3>
+                      <a href="#" class="read-more">Read More</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Swiper -->
+            <div class="mobile-swiper">
+              <div class="swiper blogSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=1170&auto=format&fit=crop"
+                        alt="Content Writing"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">4/3/22</div>
+                        <h3 class="blog-title">
+                          7 Marketing Experts Reveal The Top Qualities of A
+                          Great Content Writer
+                        </h3>
+                        <a href="#" class="read-more">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop"
+                        alt="Customer Research"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">2/28/22</div>
+                        <h3 class="blog-title">
+                          How To Put Customer Research At The Heart Of Your
+                          Content Strategy
+                        </h3>
+                        <a href="#" class="read-more">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=200&fit=crop"
+                        alt="Email Marketing"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">1/27/22</div>
+                        <h3 class="blog-title">
+                          5 Email Marketing Mistakes That Will Turn Away
+                          Subscribers (And How To Avoid Them)
+                        </h3>
+                        <a href="#" class="read-more">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop"
+                        alt="Backlink Strategy"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">12/13/21</div>
+                        <h3 class="blog-title">
+                          5 Experts Reveal Their Top Backlink Building Strategy
+                          Secrets
+                        </h3>
+                        <a href="#" class="read-more">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
+                        alt="SEO Audit"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">8/22/21</div>
+                        <h3 class="blog-title">
+                          7 Simple Steps for an Effective SEO Content Audit
+                        </h3>
+                        <a href="#" class="read-more">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=200&fit=crop"
+                        alt="LinkedIn Content"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">8/2/21</div>
+                        <h3 class="blog-title">
+                          6 Meaningful Ways To Create Content Ideas for LinkedIn
+                        </h3>
+                        <a href="#" class="read-more">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-lg-4">
+            <div class="sidebar">
+              <!-- Profile Card -->
+              <div class="sidebar-card">
+                <div class="text-center">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1674055047918-87672ee689f5?q=80&w=687&auto=format&fit=crop"
+                    alt="Christine"
+                    class="profile-img"
+                  />
+                  <h4 class="profile-text">HEY THERE!</h4>
+                  <p class="profile-description">
+                    I'm Christine and I have 9+ years of experience as a content
+                    writer. But my work extends far beyond content writing. I'm
+                    a trained content marketer who can help you get the most
+                    value from all your content assets.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Services Buttons -->
+              <div class="sidebar-card">
+                <a href="#" class="service-btn btn-all-services"
+                  >ALL SERVICES</a
+                >
+                <a href="#" class="service-btn btn-b2b">FOR B2B SAAS BRANDS</a>
+                <a href="#" class="service-btn btn-marketing"
+                  >FOR MARKETING CONSULTANTS</a
+                >
+              </div>
+
+              <!-- Course Section -->
+              <div class="course-section">
+                <h4 class="course-title">
+                  Access my FREE 5-day content strategy course.
+                </h4>
+                <p class="course-description">
+                  Over the next five days, you'll learn how to take your content
+                  strategy to the next level so that you can get relevant
+                  traffic, generate more leads, create better content, and turn
+                  customers into loyal fans.
+                </p>
+                <form>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name"
+                  />
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email Address"
+                  />
+                  <button type="submit" class="btn-get-course">
+                    Get The Course
+                  </button>
+                </form>
+                <small class="text-muted"
+                  >We respect your privacy. Unsubscribe at any time.</small
+                >
+              </div>
+
+              <!-- Search -->
+              <div class="sidebar-card">
+                <input type="text" class="form-control" placeholder="SEARCH" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--swiperjs-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
