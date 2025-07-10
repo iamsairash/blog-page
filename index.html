@@ -18,13 +18,17 @@
     <meta property="og:site_name" content="Binary Blog" />
 
     <title>Blog</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <!--fontawesome-->
+    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css" />
     <!--bootstrap-->
-    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!--swiper -->
-    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive-style.css" />
   </head>
   <body>
+    <!--navigation bar-->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -64,7 +68,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
+                <a class="nav-link" href="#about-section">ABOUT</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -101,6 +105,7 @@
         <!--Offcanvas Sidebar ends-->
       </div>
     </nav>
+    <!--navigation bar ends-->
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -127,7 +132,59 @@
 
     <!-- Main Content -->
     <main class="main-content">
+      <section id="about-section" class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <h2 class="about-title">About CEM Writing Services</h2>
+            <p class="about-description">
+              Welcome to CEM Writing Services, where content strategy meets
+              creativity. I'm Christine, a passionate content strategist with
+              over 9 years of experience helping businesses tell their stories
+              in compelling ways. My expertise spans across content writing, SEO
+              optimization, and strategic marketing that drives real results.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class="fas fa-pen-fancy"></i>
+                </div>
+                <div class="highlight-number">500+</div>
+                <div class="highlight-text">Projects Completed</div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="highlight-number">150+</div>
+                <div class="highlight-text">Happy Clients</div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="highlight-number">9+</div>
+                <div class="highlight-text">Years Experience</div>
+              </div>
+            </div>
+
+            <p class="about-description">
+              Whether you're a B2B SaaS brand looking to establish thought
+              leadership or a marketing consultant seeking to amplify your
+              message, I'm here to help you create content that resonates with
+              your audience and drives meaningful engagement.
+            </p>
+
+            <a href="./pages/about.html" class="btn-read-more">
+              Read More About My Journey
+            </a>
+          </div>
+        </div>
+      </section>
       <div class="container">
+        <!-- About Section -->
+
+        <!--About Section ends-->
         <div class="row">
           <!-- Blog Posts collection Column -->
           <div class="col-lg-8">
@@ -135,181 +192,175 @@
             <div class="desktop-grid">
               <div class="row justify-content-center">
                 <div class="col-md-6 my-2 blog-item">
-                  <article class="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=1170&auto=format&fit=crop"
-                      alt="Content Writing"
-                    />
-                    <div class="blog-card-content">
-                      <div class="blog-date">4/3/22</div>
-                      <h3 class="blog-title">
-                        7 Marketing Experts Reveal The Top Qualities of A Great
-                        Content Writer
-                      </h3>
-                      <a href="/blog1.html" class="read-more">Read More</a>
-                    </div>
-                  </article>
+                  <a href="/pages/blog1.html" class="blog-card-link">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=1170&auto=format&fit=crop"
+                        alt="Content Writing"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">4/3/22</div>
+                        <h3 class="blog-title">
+                          7 Marketing Experts Reveal The Top Qualities of A
+                          Great Content Writer
+                        </h3>
+                      </div>
+                    </article>
+                  </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <article class="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop"
-                      alt="Customer Research"
-                    />
-                    <div class="blog-card-content">
-                      <div class="blog-date">2/28/22</div>
-                      <h3 class="blog-title">
-                        How To Put Customer Research At The Heart Of Your
-                        Content Strategy
-                      </h3>
-                      <a href="/blog1.html" class="read-more">Read More</a>
-                    </div>
-                  </article>
+                  <a href="/pages/blog1.html" class="blog-card-link">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop"
+                        alt="Customer Research"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">2/28/22</div>
+                        <h3 class="blog-title">
+                          How To Put Customer Research At The Heart Of Your
+                          Content Strategy
+                        </h3>
+                      </div>
+                    </article>
+                  </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <article class="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=200&fit=crop"
-                      alt="Email Marketing"
-                    />
-                    <div class="blog-card-content">
-                      <div class="blog-date">1/27/22</div>
-                      <h3 class="blog-title">
-                        5 Email Marketing Mistakes That Will Turn Away
-                        Subscribers (And How To Avoid Them)
-                      </h3>
-                      <a href="/blog1.html" class="read-more">Read More</a>
-                    </div>
-                  </article>
+                  <a href="/pages/blog1.html" class="blog-card-link">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=200&fit=crop"
+                        alt="Email Marketing"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">1/27/22</div>
+                        <h3 class="blog-title">
+                          5 Email Marketing Mistakes That Will Turn Away
+                          Subscribers (And How To Avoid Them)
+                        </h3>
+                      </div>
+                    </article>
+                  </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <article class="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop"
-                      alt="Backlink Strategy"
-                    />
-                    <div class="blog-card-content">
-                      <div class="blog-date">12/13/21</div>
-                      <h3 class="blog-title">
-                        5 Experts Reveal Their Top Backlink Building Strategy
-                        Secrets
-                      </h3>
-                      <a href="/blog1.html" class="read-more">Read More</a>
-                    </div>
-                  </article>
+                  <a href="/pages/blog1.html" class="blog-card-link">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop"
+                        alt="Backlink Strategy"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">12/13/21</div>
+                        <h3 class="blog-title">
+                          5 Experts Reveal Their Top Backlink Building Strategy
+                          Secrets
+                        </h3>
+                      </div>
+                    </article>
+                  </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <article class="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
-                      alt="SEO Audit"
-                    />
-                    <div class="blog-card-content">
-                      <div class="blog-date">8/22/21</div>
-                      <h3 class="blog-title">
-                        7 Simple Steps for an Effective SEO Content Audit
-                      </h3>
-                      <a href="/blog1.html" class="read-more">Read More</a>
-                    </div>
-                  </article>
+                  <a href="/pages/blog1.html" class="blog-card-link">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
+                        alt="SEO Audit"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">8/22/21</div>
+                        <h3 class="blog-title">
+                          7 Simple Steps for an Effective SEO Content Audit
+                        </h3>
+                      </div>
+                    </article>
+                  </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <article class="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=1170&auto=format&fit=crop"
-                      alt="Content Writing"
-                    />
-                    <div class="blog-card-content">
-                      <div class="blog-date">4/3/22</div>
-                      <h3 class="blog-title">
-                        7 Marketing Experts Reveal The Top Qualities of A Great
-                        Content Writer
-                      </h3>
-                      <a href="/blog1.html" class="read-more">Read More</a>
-                    </div>
-                  </article>
+                  <a href="/pages/blog1.html" class="blog-card-link">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=1170&auto=format&fit=crop"
+                        alt="Content Writing"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">4/3/22</div>
+                        <h3 class="blog-title">
+                          7 Marketing Experts Reveal The Top Qualities of A
+                          Great Content Writer
+                        </h3>
+                      </div>
+                    </article>
+                  </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <article class="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop"
-                      alt="Customer Research"
-                    />
-                    <div class="blog-card-content">
-                      <div class="blog-date">2/28/22</div>
-                      <h3 class="blog-title">
-                        How To Put Customer Research At The Heart Of Your
-                        Content Strategy
-                      </h3>
-                      <a href="/blog1.html" class="read-more">Read More</a>
-                    </div>
-                  </article>
+                  <a href="/pages/blog1.html" class="blog-card-link">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop"
+                        alt="Customer Research"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">2/28/22</div>
+                        <h3 class="blog-title">
+                          How To Put Customer Research At The Heart Of Your
+                          Content Strategy
+                        </h3>
+                      </div>
+                    </article>
+                  </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <article class="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=200&fit=crop"
-                      alt="Email Marketing"
-                    />
-                    <div class="blog-card-content">
-                      <div class="blog-date">1/27/22</div>
-                      <h3 class="blog-title">
-                        5 Email Marketing Mistakes That Will Turn Away
-                        Subscribers (And How To Avoid Them)
-                      </h3>
-                      <a href="/blog1.html" class="read-more">Read More</a>
-                    </div>
-                  </article>
+                  <a href="/pages/blog1.html" class="blog-card-link">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=200&fit=crop"
+                        alt="Email Marketing"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">1/27/22</div>
+                        <h3 class="blog-title">
+                          5 Email Marketing Mistakes That Will Turn Away
+                          Subscribers (And How To Avoid Them)
+                        </h3>
+                      </div>
+                    </article>
+                  </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <article class="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop"
-                      alt="Backlink Strategy"
-                    />
-                    <div class="blog-card-content">
-                      <div class="blog-date">12/13/21</div>
-                      <h3 class="blog-title">
-                        5 Experts Reveal Their Top Backlink Building Strategy
-                        Secrets
-                      </h3>
-                      <a href="/blog1.html" class="read-more">Read More</a>
-                    </div>
-                  </article>
+                  <a href="/pages/blog1.html" class="blog-card-link">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
+                        alt="SEO Audit"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">8/22/21</div>
+                        <h3 class="blog-title">
+                          7 Simple Steps for an Effective SEO Content Audit
+                        </h3>
+                      </div>
+                    </article>
+                  </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <article class="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
-                      alt="SEO Audit"
-                    />
-                    <div class="blog-card-content">
-                      <div class="blog-date">8/22/21</div>
-                      <h3 class="blog-title">
-                        7 Simple Steps for an Effective SEO Content Audit
-                      </h3>
-                      <a href="/blog1.html" class="read-more">Read More</a>
-                    </div>
-                  </article>
-                </div>
-                <div class="col-md-6 my-2 blog-item">
-                  <article class="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
-                      alt="SEO Audit"
-                    />
-                    <div class="blog-card-content">
-                      <div class="blog-date">8/22/21</div>
-                      <h3 class="blog-title">
-                        7 Simple Steps for an Effective SEO Content Audit
-                      </h3>
-                      <a href="#" class="read-more">Read More</a>
-                    </div>
-                  </article>
+                  <a href="/pages/blog1.html" class="blog-card-link">
+                    <article class="blog-card">
+                      <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
+                        alt="SEO Audit"
+                      />
+                      <div class="blog-card-content">
+                        <div class="blog-date">8/22/21</div>
+                        <h3 class="blog-title">
+                          7 Simple Steps for an Effective SEO Content Audit
+                        </h3>
+                      </div>
+                    </article>
+                  </a>
                 </div>
               </div>
               <!--pagination control-->
-              <div class="pagination-container mt-4">
+              <div class="pagination-container text-center mt-4">
                 <button class="btn btn-secondary me-2" id="prev-page">
                   &laquo;
                 </button>
@@ -338,7 +389,9 @@
                           7 Marketing Experts Reveal The Top Qualities of A
                           Great Content Writer
                         </h3>
-                        <a href="/blog1.html" class="read-more">Read More</a>
+                        <a href="/pages/blog1.html" class="read-more"
+                          >Read More</a
+                        >
                       </div>
                     </article>
                   </div>
@@ -354,7 +407,9 @@
                           How To Put Customer Research At The Heart Of Your
                           Content Strategy
                         </h3>
-                        <a href="/blog1.html" class="read-more">Read More</a>
+                        <a href="/pages/blog1.html" class="read-more"
+                          >Read More</a
+                        >
                       </div>
                     </article>
                   </div>
@@ -370,7 +425,9 @@
                           5 Email Marketing Mistakes That Will Turn Away
                           Subscribers (And How To Avoid Them)
                         </h3>
-                        <a href="/blog1.html" class="read-more">Read More</a>
+                        <a href="/pages/blog1.html" class="read-more"
+                          >Read More</a
+                        >
                       </div>
                     </article>
                   </div>
@@ -386,7 +443,9 @@
                           5 Experts Reveal Their Top Backlink Building Strategy
                           Secrets
                         </h3>
-                        <a href="/blog1.html" class="read-more">Read More</a>
+                        <a href="/pages/blog1.html" class="read-more"
+                          >Read More</a
+                        >
                       </div>
                     </article>
                   </div>
@@ -401,7 +460,9 @@
                         <h3 class="blog-title">
                           7 Simple Steps for an Effective SEO Content Audit
                         </h3>
-                        <a href="/blog1.html" class="read-more">Read More</a>
+                        <a href="/pages/blog1.html" class="read-more"
+                          >Read More</a
+                        >
                       </div>
                     </article>
                   </div>
@@ -416,7 +477,9 @@
                         <h3 class="blog-title">
                           6 Meaningful Ways To Create Content Ideas for LinkedIn
                         </h3>
-                        <a href="/blog1.html" class="read-more">Read More</a>
+                        <a href="/pages/blog1.html" class="read-more"
+                          >Read More</a
+                        >
                       </div>
                     </article>
                   </div>
@@ -439,7 +502,7 @@
                     alt="Christine"
                     class="profile-img"
                   />
-                  <h4 class="profile-text">HEY THERE!</h4>
+                  <h4 class="profile-name-text">HEY THERE!</h4>
                   <p class="profile-description">
                     I'm Christine and I have 9+ years of experience as a content
                     writer. But my work extends far beyond content writing. I'm
@@ -507,11 +570,77 @@
     </main>
     <!--main Content ends-->
 
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="footer-title">
+              <span style="color: var(--accent-orange)">CEM</span> Writing
+              Services
+            </h4>
+            <p>
+              Professional content strategy and writing services to help your
+              business communicate effectively and build meaningful connections
+              with your audience.
+            </p>
+            <div class="social-icons">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="footer-title">Quick Links</h4>
+            <div class="row">
+              <div class="col-6">
+                <div class="footer-links">
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Blog</a>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="footer-links">
+                  <a href="#">Research Reports</a>
+                  <a href="#">Podcast</a>
+                  <a href="#">Resources</a>
+                  <a href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="footer-title">Contact Me</h4>
+            <p>
+              <i class="fas fa-envelope me-2"></i>hello@cemwritingservices.com
+            </p>
+            <p><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</p>
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i>Content Street, Strategy
+              City
+            </p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 CEM Writing Services. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
     <!--swiperjs-->
-    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
 
     <!--bootstrap-->
-    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/script.js"></script>
   </body>
