@@ -1,4 +1,5 @@
-var swiper = new Swiper(".blogSwiper", {
+//swiper
+var swiper = new Swiper(".swiper", {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 20,
@@ -15,7 +16,9 @@ var swiper = new Swiper(".blogSwiper", {
     },
   },
 });
+//swiper ends
 
+// pagination
 const blogItems = document.querySelectorAll(".blog-item");
 const itemsPerPage = 4;
 const totalPages = Math.ceil(blogItems.length / itemsPerPage);
@@ -74,3 +77,9 @@ document.getElementById("next-page").addEventListener("click", () => {
 // Initialize
 createPagination();
 showPage(currentPage);
+
+//pagination ends
+
+//counter
+
+//counter ends

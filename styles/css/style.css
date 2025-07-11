@@ -1,5 +1,5 @@
 :root {
-  --primary-dark: #2c3e50;
+  --primary-dark: #211b1b;
   --primary-blue: #34495e;
   --accent-orange: #e67e22;
   --accent-blue: #3498db;
@@ -32,18 +32,18 @@ body {
 
 .navbar .navbar-brand {
   font-weight: 700;
-  color: white !important;
+  color: white;
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: white;
   font-weight: 500;
   margin: 0 0.5rem;
   transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--accent-orange) !important;
+  color: var(--accent-orange);
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
@@ -51,32 +51,31 @@ body {
   margin-top: 0;
 }
 
-.side-bar {
-  background-color: var(--primary-dark) !important;
-  color: var(--text-light) !important;
+.offcanvas {
+  background-color: var(--primary-dark);
+  color: var(--text-light);
 }
 
 .btn-contact {
-  background: var(--accent-orange) !important;
+  background: var(--accent-orange);
   color: white;
   border: none;
   padding: 0.5rem 1.5rem;
   border-radius: 5px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .btn-contact:hover {
   background: #d35400;
-  transform: translateY(-2px);
+  transform: translateY(2px);
 }
 
 /* Hero Section */
 .hero-section {
-  background-color: var(--primary-dark);
+  background-color: var(--primary-blue);
   color: white;
   padding: 8rem 0 4rem;
-  overflow: hidden;
 }
 
 .hero-section h1 {
@@ -84,6 +83,12 @@ body {
   font-weight: 600;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.hero-section .hero-content p {
+  font-weight: 800;
+  margin-block-end: 1rem;
+  color: var(--text-light);
 }
 
 .hero-section .search-container {
@@ -448,11 +453,7 @@ body {
 
 /* Blog Header */
 .blog-header {
-  background: linear-gradient(
-    135deg,
-    var(--primary-dark) 0%,
-    var(--primary-blue) 100%
-  );
+  background: var(--primary-blue);
   color: white;
   padding: 120px 0 80px;
   position: relative;
@@ -535,11 +536,7 @@ body {
 
 /* Timeline Section */
 .timeline-section {
-  background: linear-gradient(
-    135deg,
-    var(--accent-blue) 0%,
-    var(--primary-blue) 100%
-  );
+  background: linear-gradient(135deg, #122437 0%, #7e5fdb 100%);
   color: white;
   padding: 80px 0;
 }
@@ -747,39 +744,46 @@ body {
 
 /* Stats Section */
 .stats-section {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 60px 0;
   margin: 60px 0;
 }
 
-.stat-item {
+.stats-item-container > div {
+  display: flex;
+  justify-content: center;
+}
+
+.stats-item-container > div > div {
+  width: 240px;
+  height: 240px;
   text-align: center;
   padding: 2rem;
   background: white;
-  border-radius: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-orange);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   margin-bottom: 2rem;
 }
 
-.stat-item:hover {
+.stats-item-container > div > div:hover {
   transform: translateY(-5px);
 }
 
 .stat-icon {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--accent-orange);
   margin-bottom: 1rem;
 }
 
 .stat-number {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--dark-bg);
 }
 
 .stat-text {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--gray-text);
   margin-top: 0.5rem;
 }
@@ -817,7 +821,7 @@ body {
   color: var(--dark-bg);
 }
 
-.service-description {
+.service-card > .service-description {
   color: var(--primary-dark);
   line-height: 1.7;
 }
@@ -939,3 +943,146 @@ body {
   color: #2980b9;
 }
 /*related posts ends*/
+
+/*breadcrumbs */
+.breadcrumbs-active {
+  color: #757f88;
+}
+/*breadcrumbs ends */
+
+/* Services Section */
+.services-section {
+  padding: 80px 0;
+  background-color: var(--bg-light);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text-dark);
+}
+
+.service-category {
+  margin-bottom: 4rem;
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-category:hover {
+  transform: translateY(-5px);
+}
+
+.category-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--accent-orange);
+}
+
+.category-header > .category-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.service-category > .category-header > .category-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: var(--accent-orange);
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.service-description {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.service-features li {
+  padding: 0.5rem 0;
+  color: var(--text-dark);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.service-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent-orange);
+  font-weight: bold;
+}
+
+.service-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  margin-bottom: 1rem;
+}
+
+.btn-service {
+  background-color: var(--accent-orange);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-service:hover {
+  background-color: #e55a2b;
+  color: white;
+  transform: translateY(-2px);
+}
+/*Service Section Ends*/

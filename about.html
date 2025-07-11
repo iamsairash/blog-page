@@ -20,19 +20,19 @@
     <title>About - CEM Writing Services</title>
 
     <!--fontawesome-->
-    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./plugins/fontawesome/css/all.min.css" />
     <!--bootstrap-->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!--swiper -->
-    <link rel="stylesheet" href="../vendor/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/responsive-style.css" />
+    <link rel="stylesheet" href="./plugins/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/css/style.css" />
+    <link rel="stylesheet" href="./styles/css/responsive-style.css" />
   </head>
   <body>
     <!--navigation bar-->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="../index.html">
+        <a class="navbar-brand" href="/index.html">
           <span style="color: var(--accent-orange)">CEM</span> Writing Services
         </a>
 
@@ -45,6 +45,7 @@
         >
           <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
         </button>
+        <!--Button to opne sidebar ends-->
 
         <!-- Offcanvas Sidebar -->
         <div
@@ -54,7 +55,7 @@
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand" href="/index.html">
                 <span style="color: var(--accent-orange)">CEM</span> Writing
                 Services
               </a>
@@ -68,27 +69,13 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="servicesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  >SERVICES</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Content Writing</a></li>
-                  <li><a class="dropdown-item" href="#">SEO Services</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Content Strategy</a>
-                  </li>
-                </ul>
+                <a class="nav-link" href="#about-section">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">BLOG</a>
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">RESEARCH REPORT</a>
@@ -102,6 +89,7 @@
             </ul>
           </div>
         </div>
+        <!--Offcanvas Sidebar ends-->
       </div>
     </nav>
 
@@ -114,6 +102,21 @@
             Transforming businesses through strategic content and compelling
             storytelling
           </p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="/index.html" class="text-light">Home </a>
+              </li>
+              <li
+                class="breadcrumb-item breadcrumbs-active"
+                aria-current="page"
+              >
+                About
+              </li>
+            </ol>
+          </nav>
         </div>
       </div>
     </section>
@@ -168,40 +171,49 @@
         <!-- Stats Section -->
         <section class="stats-section">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-6">
-                <div class="stat-item">
+            <div class="row stats-item-container">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div>
                   <div class="stat-icon">
                     <i class="fas fa-pen-fancy"></i>
                   </div>
-                  <div class="stat-number">500+</div>
+                  <div class="stat-number fs-1">
+                    500<span class="h5"> +</span>
+                  </div>
                   <div class="stat-text">Projects Completed</div>
                 </div>
               </div>
+
               <div class="col-lg-3 col-md-6">
-                <div class="stat-item">
+                <div class="">
                   <div class="stat-icon">
                     <i class="fas fa-users"></i>
                   </div>
-                  <div class="stat-number">150+</div>
+                  <div class="stat-number fs-1">
+                    150<span class="h5"> +</span>
+                  </div>
                   <div class="stat-text">Happy Clients</div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
-                <div class="stat-item">
+                <div class="">
                   <div class="stat-icon">
                     <i class="fas fa-chart-line"></i>
                   </div>
-                  <div class="stat-number">9+</div>
+                  <div class="stat-number fs-1">
+                    9<span class="h5"> +</span>
+                  </div>
                   <div class="stat-text">Years Experience</div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
-                <div class="stat-item">
+                <div class="">
                   <div class="stat-icon">
                     <i class="fas fa-award"></i>
                   </div>
-                  <div class="stat-number">25+</div>
+                  <div class="stat-number fs-1">
+                    25<span class="h5"> +</span>
+                  </div>
                   <div class="stat-text">Industry Awards</div>
                 </div>
               </div>
@@ -390,7 +402,7 @@
             <p>
               <i class="fas fa-envelope me-2"></i>hello@cemwritingservices.com
             </p>
-            <p><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</p>
+            <p><i class="fas fa-phone me-2"></i>+977-9821838301</p>
             <p>
               <i class="fas fa-map-marker-alt me-2"></i>Content Street, Strategy
               City
@@ -404,11 +416,33 @@
     </footer>
 
     <!--swiperjs-->
-    <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./plugins/swiper/swiper-bundle.min.js"></script>
 
     <!--bootstrap-->
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".stat-number").forEach((el) => {
+          const numberNode = el.firstChild;
+
+          let end = +numberNode.textContent.replace(/\D/g, "");
+          let count = 0;
+          let step = Math.ceil(end / 100);
+
+          let interval = setInterval(() => {
+            count += step;
+            if (count >= end) {
+              numberNode.textContent = end;
+              clearInterval(interval);
+            } else {
+              numberNode.textContent = count;
+            }
+          }, 10);
+        });
+      });
+    </script>
   </body>
 </html>

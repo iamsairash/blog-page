@@ -16,22 +16,25 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Binary Blog" />
     <title>Document</title>
-    <link rel="stylesheet" href="../assets/css/style.css" />
     <!--bootstrap-->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!--fontawesome-->
-    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./plugins/fontawesome/css/all.min.css" />
 
     <!--swiper -->
-    <link rel="stylesheet" href="../vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./plugins/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/css/style.css" />
+
+    <link rel="stylesheet" href="./styles/css/responsive-style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
           <span style="color: var(--accent-orange)">CEM</span> Writing Services
         </a>
 
+        <!-- Button to open sidebar -->
         <button
           class="navbar-toggler"
           type="button"
@@ -40,7 +43,9 @@
         >
           <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
         </button>
+        <!--Button to opne sidebar ends-->
 
+        <!-- Offcanvas Sidebar -->
         <div
           class="offcanvas offcanvas-start side-bar"
           tabindex="-1"
@@ -62,24 +67,10 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
+                <a class="nav-link" href="#about-section">ABOUT</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="servicesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  >SERVICES</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Content Writing</a></li>
-                  <li><a class="dropdown-item" href="#">SEO Services</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Content Strategy</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">BLOG</a>
@@ -96,6 +87,7 @@
             </ul>
           </div>
         </div>
+        <!--Offcanvas Sidebar ends-->
       </div>
     </nav>
 
@@ -135,6 +127,21 @@
                 <small>Content Strategist & Marketing Consultant</small>
               </div>
             </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/index.html" class="text-light">Home </a>
+                </li>
+                <li
+                  class="breadcrumb-item breadcrumbs-active"
+                  aria-current="page"
+                >
+                  About
+                </li>
+              </ol>
+            </nav>
           </div>
         </div>
       </div>
@@ -620,7 +627,7 @@
             <p>
               <i class="fas fa-envelope me-2"></i>hello@cemwritingservices.com
             </p>
-            <p><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</p>
+            <p><i class="fas fa-phone me-2"></i>+977-9821838301</p>
             <p>
               <i class="fas fa-map-marker-alt me-2"></i>Content Street, Strategy
               City

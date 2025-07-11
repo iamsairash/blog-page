@@ -19,19 +19,19 @@
 
     <title>Blog</title>
     <!--fontawesome-->
-    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
     <!--bootstrap-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!--swiper -->
-    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive-style.css" />
+    <link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/css/style.css" />
+    <link rel="stylesheet" href="styles/css/responsive-style.css" />
   </head>
   <body>
     <!--navigation bar-->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
           <span style="color: var(--accent-orange)">CEM</span> Writing Services
         </a>
 
@@ -70,22 +70,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#about-section">ABOUT</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="servicesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  >SERVICES</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Content Writing</a></li>
-                  <li><a class="dropdown-item" href="#">SEO Services</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Content Strategy</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">BLOG</a>
@@ -132,6 +118,7 @@
 
     <!-- Main Content -->
     <main class="main-content">
+      <!--About Section-->
       <section id="about-section" class="about-section">
         <div class="container">
           <div class="about-content">
@@ -175,16 +162,311 @@
               your audience and drives meaningful engagement.
             </p>
 
-            <a href="./pages/about.html" class="btn-read-more">
+            <a href="about.html" class="btn-read-more">
               Read More About My Journey
             </a>
           </div>
         </div>
       </section>
-      <div class="container">
-        <!-- About Section -->
+      <!--About Section ends-->
 
-        <!--About Section ends-->
+      <!--Service Section-->
+      <section id="services-section" class="services-section d-none d-md-block">
+        <div class="container">
+          <div class="services-header text-center">
+            <p
+              class="text-uppercase"
+              style="
+                color: var(--accent-orange);
+                font-weight: 700;
+                margin-bottom: 1rem;
+              "
+            >
+              SERVICES
+            </p>
+            <h2 class="services-title">Comprehensive Content Solutions</h2>
+            <p class="services-description">
+              From strategic planning to execution, I provide end-to-end content
+              services that drive results and amplify your brand's voice.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-pen-nib"></i>
+                </div>
+                <h3 class="service-title">Content Writing</h3>
+                <p class="service-description">
+                  High-quality blog posts, articles, and web copy that engage
+                  your audience and drive conversions. Every piece is crafted
+                  with SEO best practices in mind.
+                </p>
+                <ul class="service-features">
+                  <li>Blog Posts & Articles</li>
+                  <li>Website Copy</li>
+                  <li>Email Campaigns</li>
+                  <li>Social Media Content</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="service-title">Content Strategy</h3>
+                <p class="service-description">
+                  Comprehensive content strategies that align with your business
+                  goals and resonate with your target audience across all
+                  channels.
+                </p>
+                <ul class="service-features">
+                  <li>Content Audits</li>
+                  <li>Editorial Calendars</li>
+                  <li>Brand Voice Development</li>
+                  <li>Content Planning</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <h3 class="service-title">SEO Optimization</h3>
+                <p class="service-description">
+                  Data-driven SEO strategies that improve your search rankings
+                  and bring organic traffic to your content and website.
+                </p>
+                <ul class="service-features">
+                  <li>Keyword Research</li>
+                  <li>On-Page SEO</li>
+                  <li>Content Optimization</li>
+                  <li>Technical SEO Audits</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3 class="service-title">Marketing Consulting</h3>
+                <p class="service-description">
+                  Strategic marketing guidance to help you build a strong brand
+                  presence and develop effective marketing campaigns.
+                </p>
+                <ul class="service-features">
+                  <li>Marketing Strategy</li>
+                  <li>Brand Positioning</li>
+                  <li>Campaign Planning</li>
+                  <li>Performance Analysis</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <h3 class="service-title">B2B SaaS Specialized</h3>
+                <p class="service-description">
+                  Tailored content solutions for B2B SaaS companies looking to
+                  establish thought leadership and drive qualified leads.
+                </p>
+                <ul class="service-features">
+                  <li>Technical Documentation</li>
+                  <li>Case Studies</li>
+                  <li>Whitepapers</li>
+                  <li>Product Marketing</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="service-title">Training & Workshops</h3>
+                <p class="service-description">
+                  Empower your team with content marketing skills through
+                  customized training sessions and workshops.
+                </p>
+                <ul class="service-features">
+                  <li>Content Writing Training</li>
+                  <li>SEO Workshops</li>
+                  <li>Strategy Sessions</li>
+                  <li>Team Coaching</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <a href="/service_collection.html" class="btn btn-primary"
+              >more Services</a
+            >
+          </div>
+
+          <section class="cta-section bg-light text-dark">
+            <div class="container">
+              <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Content?</h2>
+                <p class="cta-description">
+                  Let's work together to create content that doesn't just
+                  inform—it inspires, engages, and drives real business results.
+                </p>
+                <a href="#" class="btn-cta">Get Started Today</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!--Swiper Service-->
+      <div class="mobile-swiper">
+        <div class="services-header text-center">
+          <p
+            class="text-uppercase"
+            style="
+              color: var(--accent-orange);
+              font-weight: 700;
+              margin-bottom: 1rem;
+            "
+          >
+            SERVICES
+          </p>
+          <h2 class="services-title">Comprehensive Content Solutions</h2>
+          <p class="services-description">
+            From strategic planning to execution, I provide end-to-end content
+            services that drive results and amplify your brand's voice.
+          </p>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-pen-nib"></i>
+                </div>
+                <h3 class="service-title">Content Writing</h3>
+                <p class="service-description">
+                  High-quality blog posts, articles, and web copy that engage
+                  your audience and drive conversions. Every piece is crafted
+                  with SEO best practices in mind.
+                </p>
+                <ul class="service-features">
+                  <li>Blog Posts & Articles</li>
+                  <li>Website Copy</li>
+                  <li>Email Campaigns</li>
+                  <li>Social Media Content</li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="service-title">Content Strategy</h3>
+                <p class="service-description">
+                  Comprehensive content strategies that align with your business
+                  goals and resonate with your target audience across all
+                  channels.
+                </p>
+                <ul class="service-features">
+                  <li>Content Audits</li>
+                  <li>Editorial Calendars</li>
+                  <li>Brand Voice Development</li>
+                  <li>Content Planning</li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <h3 class="service-title">SEO Optimization</h3>
+                <p class="service-description">
+                  Data-driven SEO strategies that improve your search rankings
+                  and bring organic traffic to your content and website.
+                </p>
+                <ul class="service-features">
+                  <li>Keyword Research</li>
+                  <li>On-Page SEO</li>
+                  <li>Content Optimization</li>
+                  <li>Technical SEO Audits</li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3 class="service-title">Marketing Consulting</h3>
+                <p class="service-description">
+                  Strategic marketing guidance to help you build a strong brand
+                  presence and develop effective marketing campaigns.
+                </p>
+                <ul class="service-features">
+                  <li>Marketing Strategy</li>
+                  <li>Brand Positioning</li>
+                  <li>Campaign Planning</li>
+                  <li>Performance Analysis</li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <h3 class="service-title">B2B SaaS Specialized</h3>
+                <p class="service-description">
+                  Tailored content solutions for B2B SaaS companies looking to
+                  establish thought leadership and drive qualified leads.
+                </p>
+                <ul class="service-features">
+                  <li>Technical Documentation</li>
+                  <li>Case Studies</li>
+                  <li>Whitepapers</li>
+                  <li>Product Marketing</li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="service-title">Training & Workshops</h3>
+                <p class="service-description">
+                  Empower your team with content marketing skills through
+                  customized training sessions and workshops.
+                </p>
+                <ul class="service-features">
+                  <li>Content Writing Training</li>
+                  <li>SEO Workshops</li>
+                  <li>Strategy Sessions</li>
+                  <li>Team Coaching</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!--Swiper Service Ends-->
+
+      <!--Service Section Ends-->
+      <div class="container">
         <div class="row">
           <!-- Blog Posts collection Column -->
           <div class="col-lg-8">
@@ -192,7 +474,7 @@
             <div class="desktop-grid">
               <div class="row justify-content-center">
                 <div class="col-md-6 my-2 blog-item">
-                  <a href="/pages/blog1.html" class="blog-card-link">
+                  <a href="blog1.html" class="blog-card-link">
                     <article class="blog-card">
                       <img
                         src="https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=1170&auto=format&fit=crop"
@@ -209,7 +491,7 @@
                   </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <a href="/pages/blog1.html" class="blog-card-link">
+                  <a href="blog1.html" class="blog-card-link">
                     <article class="blog-card">
                       <img
                         src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop"
@@ -226,7 +508,7 @@
                   </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <a href="/pages/blog1.html" class="blog-card-link">
+                  <a href="blog1.html" class="blog-card-link">
                     <article class="blog-card">
                       <img
                         src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=200&fit=crop"
@@ -243,7 +525,7 @@
                   </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <a href="/pages/blog1.html" class="blog-card-link">
+                  <a href="blog1.html" class="blog-card-link">
                     <article class="blog-card">
                       <img
                         src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop"
@@ -260,7 +542,7 @@
                   </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <a href="/pages/blog1.html" class="blog-card-link">
+                  <a href="blog1.html" class="blog-card-link">
                     <article class="blog-card">
                       <img
                         src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
@@ -276,7 +558,7 @@
                   </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <a href="/pages/blog1.html" class="blog-card-link">
+                  <a href="blog1.html" class="blog-card-link">
                     <article class="blog-card">
                       <img
                         src="https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=1170&auto=format&fit=crop"
@@ -293,7 +575,7 @@
                   </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <a href="/pages/blog1.html" class="blog-card-link">
+                  <a href="blog1.html" class="blog-card-link">
                     <article class="blog-card">
                       <img
                         src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop"
@@ -310,7 +592,7 @@
                   </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <a href="/pages/blog1.html" class="blog-card-link">
+                  <a href="blog1.html" class="blog-card-link">
                     <article class="blog-card">
                       <img
                         src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=200&fit=crop"
@@ -327,7 +609,7 @@
                   </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <a href="/pages/blog1.html" class="blog-card-link">
+                  <a href="blog1.html" class="blog-card-link">
                     <article class="blog-card">
                       <img
                         src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
@@ -343,7 +625,7 @@
                   </a>
                 </div>
                 <div class="col-md-6 my-2 blog-item">
-                  <a href="/pages/blog1.html" class="blog-card-link">
+                  <a href="blog1.html" class="blog-card-link">
                     <article class="blog-card">
                       <img
                         src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
@@ -373,9 +655,9 @@
             </div>
             <!--Desktop Grid ends-->
 
-            <!-- Mobile Swiper -->
+            <!-- Mobile Swiper Blog -->
             <div class="mobile-swiper">
-              <div class="swiper blogSwiper">
+              <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <article class="blog-card">
@@ -389,9 +671,7 @@
                           7 Marketing Experts Reveal The Top Qualities of A
                           Great Content Writer
                         </h3>
-                        <a href="/pages/blog1.html" class="read-more"
-                          >Read More</a
-                        >
+                        <a href="blog1.html" class="read-more">Read More</a>
                       </div>
                     </article>
                   </div>
@@ -407,9 +687,7 @@
                           How To Put Customer Research At The Heart Of Your
                           Content Strategy
                         </h3>
-                        <a href="/pages/blog1.html" class="read-more"
-                          >Read More</a
-                        >
+                        <a href="blog1.html" class="read-more">Read More</a>
                       </div>
                     </article>
                   </div>
@@ -425,9 +703,7 @@
                           5 Email Marketing Mistakes That Will Turn Away
                           Subscribers (And How To Avoid Them)
                         </h3>
-                        <a href="/pages/blog1.html" class="read-more"
-                          >Read More</a
-                        >
+                        <a href="blog1.html" class="read-more">Read More</a>
                       </div>
                     </article>
                   </div>
@@ -443,9 +719,7 @@
                           5 Experts Reveal Their Top Backlink Building Strategy
                           Secrets
                         </h3>
-                        <a href="/pages/blog1.html" class="read-more"
-                          >Read More</a
-                        >
+                        <a href="blog1.html" class="read-more">Read More</a>
                       </div>
                     </article>
                   </div>
@@ -460,9 +734,7 @@
                         <h3 class="blog-title">
                           7 Simple Steps for an Effective SEO Content Audit
                         </h3>
-                        <a href="/pages/blog1.html" class="read-more"
-                          >Read More</a
-                        >
+                        <a href="blog1.html" class="read-more">Read More</a>
                       </div>
                     </article>
                   </div>
@@ -477,9 +749,7 @@
                         <h3 class="blog-title">
                           6 Meaningful Ways To Create Content Ideas for LinkedIn
                         </h3>
-                        <a href="/pages/blog1.html" class="read-more"
-                          >Read More</a
-                        >
+                        <a href="blog1.html" class="read-more">Read More</a>
                       </div>
                     </article>
                   </div>
@@ -487,7 +757,7 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <!--Mobile Swiper Ends-->
+            <!--Mobile Swiper Blog Ends-->
           </div>
           <!--BLog posts collection Column ends-->
 
@@ -623,7 +893,7 @@
             <p>
               <i class="fas fa-envelope me-2"></i>hello@cemwritingservices.com
             </p>
-            <p><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</p>
+            <p><i class="fas fa-phone me-2"></i>+977-9821838301</p>
             <p>
               <i class="fas fa-map-marker-alt me-2"></i>Content Street, Strategy
               City
@@ -637,10 +907,10 @@
     </footer>
 
     <!--swiperjs-->
-    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="plugins/swiper/swiper-bundle.min.js"></script>
 
     <!--bootstrap-->
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/script.js"></script>
   </body>
